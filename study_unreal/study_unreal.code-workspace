@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "study_unreal",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "I:\\UE_5.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "study_unreal Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Debug",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Debug",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"study_unreal Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Debug",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"DebugGame",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"DebugGame",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"study_unreal Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"DebugGame",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Development",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Development",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"study_unreal Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Development",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Test",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Test",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"study_unreal Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Test",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Shipping",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Shipping",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"study_unreal Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unreal Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"study_unreal",
+					"Win64",
+					"Shipping",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unrealEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unrealEditor",
+					"Win64",
+					"Debug",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unrealEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unrealEditor",
+					"Win64",
+					"Debug",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"study_unrealEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unrealEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"study_unrealEditor",
+					"Win64",
+					"Debug",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unrealEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unrealEditor",
+					"Win64",
+					"DebugGame",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unrealEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unrealEditor",
+					"Win64",
+					"DebugGame",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"study_unrealEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unrealEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"study_unrealEditor",
+					"Win64",
+					"DebugGame",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unrealEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unrealEditor",
+					"Win64",
+					"Development",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unrealEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"study_unrealEditor",
+					"Win64",
+					"Development",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"study_unrealEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			},
+			{
+				"label": "study_unrealEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"study_unrealEditor",
+					"Win64",
+					"Development",
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "I:\\UE_5.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch study_unreal (Debug)",
+				"request": "launch",
+				"program": "I:\\study_unreal\\study_unreal\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "study_unreal Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "I:\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "I:\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "I:\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch study_unreal (DebugGame)",
+				"request": "launch",
+				"program": "I:\\study_unreal\\study_unreal\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "study_unreal Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "I:\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "I:\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "I:\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch study_unreal (Development)",
+				"request": "launch",
+				"program": "I:\\study_unreal\\study_unreal\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "study_unreal Win64 Development Build",
+				"args": [
+				],
+				"cwd": "I:\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "I:\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "I:\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch study_unreal (Test)",
+				"request": "launch",
+				"program": "I:\\study_unreal\\study_unreal\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "study_unreal Win64 Test Build",
+				"args": [
+				],
+				"cwd": "I:\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "I:\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "I:\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch study_unreal (Shipping)",
+				"request": "launch",
+				"program": "I:\\study_unreal\\study_unreal\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "study_unreal Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "I:\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "I:\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "I:\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch study_unrealEditor (Debug)",
+				"request": "launch",
+				"program": "I:\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "study_unrealEditor Win64 Debug Build",
+				"args": [
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject"
+				],
+				"cwd": "I:\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "I:\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "I:\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch study_unrealEditor (DebugGame)",
+				"request": "launch",
+				"program": "I:\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "study_unrealEditor Win64 DebugGame Build",
+				"args": [
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject"
+				],
+				"cwd": "I:\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "I:\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "I:\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch study_unrealEditor (Development)",
+				"request": "launch",
+				"program": "I:\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "study_unrealEditor Win64 Development Build",
+				"args": [
+					"I:\\study_unreal\\study_unreal\\study_unreal.uproject"
+				],
+				"cwd": "I:\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "I:\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "I:\\UE_5.4"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "I:\\UE_5.4\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=I:\\study_unreal\\study_unreal\\study_unreal.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "I:\\UE_5.4"
+			}
+		]
+	}
+}
